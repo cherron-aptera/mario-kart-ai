@@ -1,0 +1,23 @@
+{
+  "crop": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "done": {
+    "variables": {
+      "P1RaceStatus": {
+        "op": "equal",
+        "reference": 120
+      }
+    }
+  },
+  "reward": {
+    "script": "lua:lap_score_with_checkpoints"
+    }
+  },
+  "scripts": [
+    "script.lua"
+  ]
+}

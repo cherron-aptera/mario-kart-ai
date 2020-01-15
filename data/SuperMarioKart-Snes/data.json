@@ -1,0 +1,61 @@
+{
+  "info": {
+    "P1Collision": {
+      "address": 4178,
+      "type": "=u1"
+    },
+    "P1FacingAngle": {
+      "address": 4139,
+      "type": "=u1"
+    },
+    "P1FacingAngleSub": {
+      "address": 4138,
+      "type": "=u1"
+    },
+    "P1Lap": {
+      "address": 4289,
+      "mask": 127,
+      "type": "=u1"
+    },
+    "P1LapCheckpoint": {
+      "address": 4288,
+      "type": "=u1"
+    },
+    "P1PosX": {
+      "address": 4120,
+      "type": "=u2"
+    },
+    "P1PosY": {
+      "address": 4124,
+      "type": "=u2"
+    },
+    "P1PosZ": {
+      "address": 4127,
+      "type": "=u2"
+    },
+    "P1RaceStatus": {
+      "address": 4112,
+      "type": "=u1"
+    },
+    "P1Rank": {
+      "address": 4160,
+      "type": "=u1"
+    },
+    "P1Vel": {
+      "address": 4330,
+      "type": "=u2"
+    },
+    "P1VelX": {
+      "address": 4130,
+      "type": "=i2"
+    },
+    "P1VelY": {
+      "address": 4132,
+      "type": "=i2"
+    },
+    "RaceCheckpointsMax": {
+      "address": 328,
+      "type": "=u2"
+    }
+  }
+}

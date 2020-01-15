@@ -31,3 +31,11 @@ Had trouble making progress on the memory map yesterday, so today I poked around
 * https://epicedit.stifu.fr/smk_doc/
 
 
+Followed this blog post for information on setting up the reward function: https://medium.com/aureliantactics/setting-up-a-reward-function-in-retro-gym-and-other-utilities-886491849353
+
+This one was also interesting: https://medium.com/aureliantactics/creating-a-custom-reward-function-in-retro-gym-and-other-utilities-33c9f783bd1a
+
+Finally got a simple reward function written in Lua to work -- I think this will be just fine.  It "cheats" a little bit in that it looks at the RAM to track the current progress around the track, but I think this is acceptable.  Maybe in the future we will want to make one that only looks at the screen, but I think this is fine for now.
+
+
+
