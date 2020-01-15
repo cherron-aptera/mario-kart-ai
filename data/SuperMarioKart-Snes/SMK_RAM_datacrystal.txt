@@ -1,0 +1,109 @@
+From: https://datacrystal.romhacking.net/wiki/Super_Mario_Kart:RAM_map
+
+Player kart position coordinates, 2 unsigned bytes each:
+7E008C = how far south
+7E0088 = how far east
+So the 'origin' of the map is in the North West (top left)
+
+How many coins, unsigned byte: 7E0E00
+
+Camera facing angle, 2 unsigned bytes: 7E0095
+north = 0
+east = 64
+south = 128
+west = 192
+
+Kart facing angle (note: relative to the camera angle), 2 signed bytes: 7E10AA
+Going straight = 0
+Going a little to the right = -1 to about -12000
+Going a little to the left = 1 to about 12000
+Spinning out of control = more than about  /- 16500
+(eg hit a bananna skin, shell, etc)
+
+Player kart speed, 2 signed bytes each:
+speed to the east = 7E1022
+speed to the south = 7E1024
+overall speed = 7E10EA
+
+Items, 2 unsigned bytes: (7E0D70, 7E0C69)
+nothing = (0,60)
+mushroom = (0,52)
+feather = (1,52)
+star = (2,56)
+banana = (3,56)
+green shell = (4,48)
+red shell = (5,52)
+coin = (7,56)
+lightning = (8,56)
+selecting/spinning = (0-8,?)
+
+7E0D7C (2u) also indicates item, and is set the instant you go over an item square
+
+Height in hop/jump/ramp, 2 unsigned bytes: 7E101F
+on ground = 0
+above ground = 1 
+
+Status, unsigned byte: 7E10A0
+on the ground = 0
+jump/hop/ramp = 2
+fallen off edge = 4
+in lava = 6
+in deep water = 8
+
+Surface type, unsigned byte: 7E10AE
+unused power up square = 20
+deep water = 34
+mario circuit road / ghost valley road / used power up square / rainbow road = 64
+bowser castle = 68
+doughnut plains track = 70
+koopa beach sand = 74
+choco island track = 76
+ghost valley rough bit / bowser castle rough bit / ice = 78
+choco island bridges = 80
+choco island slightly rough bit of track = 82
+mario circuit off road = 84
+choco island off road = 86
+snow = 88
+koopa beach bushes / doughnut plains grass = 90
+shallow-water = 92
+mud puddle = 94
+
+Lap number, two variables, both unsigned bytes:
+byte 7E10C1 = lap you're currently on
+byte 7E10F9 = maximum lap you've reached
+0 = 127
+1 = 128
+2 = 129
+3 = 130
+4 = 131
+5 = 132
+finished = 133
+
+Collision detection, unsigned byte: 7E1052
+not collision = 0
+collision = 7, then one less each frame down to 0
+
+Gopher attatched to kart, unsigned byte: 7E1061
+no = 0
+yes = 152 / 153
+
+Mushroom shrunk, unsigned byte: 7E1030 
+no = 0
+yes = 128
+
+Boost-counter (undocumented feature - see http://tasvideos.org/SuperMarioKartPhysics.html).
+Two unsigned bytes: 7E10CA
+
+Kart skidded out of control, unsigned byte: 7E10A6
+normal = 0/2
+using a star = 0/2/28
+hit a banana-peel = 12
+skidded out right = 14
+skidded out left = 16
+in a mini-boost = 18
+at mini-boost peak = 28
+hit something (eg a wall) = 18/28
+
+In a mushroom boost or not, unsigned byte: 7E104E
+in the boost = 58
+not = 26
