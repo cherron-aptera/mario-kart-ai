@@ -21,3 +21,7 @@ Installed OpenAI Gym: https://github.com/openai/retro
 
 Downloaded SNES game ROMs from here:
 https://archive.org/details/No-Intro-Collection_2016-01-03_Fixed
+
+Loaded `Super Mario Kart (USA).sfc` into Gym Retro Integration app
+
+Began mapping memory -- found the variable used for Coins, but haven't yet found anything else.
