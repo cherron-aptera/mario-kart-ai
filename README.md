@@ -12,6 +12,8 @@ Each participant will create a Mario Kart AI to pit against the others and see w
 
 **Bonus**: If we can figure out how to pit the 2 players against each other and have them race head-to-head in real-time, then that sounds awesome.
 
+![AI Gym Integration Screenshot](docs/MarioKartAI_GymRetroIntegration.png)
+
 ## Current Leaderboards
 Nobody has posted anything!
 
