@@ -5,7 +5,7 @@ Installed OpenAI Gym: https://github.com/openai/retro
 
 ```python3 -m pip install gym-retro```
 
-Super Mario Kart is not included as one of the mapped ROMs, so the first step is going to be get the ROM and add integration support for it into Retro Gym.
+Super Mario Kart is not included as one of the mapped ROMs, so the first step is going to be get the ROM and add integration support for it into Retro Gym: https://retro.readthedocs.io/en/latest/integration.html#game-integration
 
 Downloaded SNES game ROMs from here:
 https://archive.org/details/No-Intro-Collection_2016-01-03_Fixed
@@ -37,5 +37,12 @@ This one was also interesting: https://medium.com/aureliantactics/creating-a-cus
 
 Finally got a simple reward function written in Lua to work -- I think this will be just fine.  It "cheats" a little bit in that it looks at the RAM to track the current progress around the track, but I think this is acceptable.  Maybe in the future we will want to make one that only looks at the screen, but I think this is fine for now.
 
+You can see the reward function in action here:
+![AI Gym Integration Screenshot](docs/MarioKartAI_GymRetroIntegration.png)
+
+Huzzah!
 
 
+### Thursday, January 16th, 2020
+
+Helpful link: https://www.freecodecamp.org/news/how-to-use-ai-to-play-sonic-the-hedgehog-its-neat-9d862a2aef98/
