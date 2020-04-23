@@ -23,7 +23,6 @@ Also found the current track timer, current acceleration value, and steering val
 Had trouble making progress on the memory map yesterday, so today I poked around online and found a few other places where people had mapped out some variables:
 
 * https://datacrystal.romhacking.net/wiki/Super_Mario_Kart:RAM_map
-* https://hack64.net/wiki/doku.php?id=mario_kart_64:memory_map
 * https://smkdan.eludevisibility.org/smk.html
 * https://www.smwcentral.net/?p=viewthread&t=93458
 * http://www.arcaderestoration.com/memorymap/5382/Mario+Kart.aspx
