@@ -14,8 +14,7 @@
     }
   },
   "reward": {
-    "script": "lua:lap_score_with_checkpoints"
-    }
+    "script": "lua:p1_lap_score_with_checkpoints"
   },
   "scripts": [
     "script.lua"

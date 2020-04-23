@@ -1,15 +1,16 @@
-lap_score = 0
 
-function lap_score_with_checkpoints()
-  lap_score = data.P1LapCheckpoint + (correct_lap() * 100)
-  return lap_score
-end
-
-function correct_lap ()
-  if data.P1Lap == 127 then
-    return 0
-  else
-    return data.P1Lap + 1
+function p1_lap_score_with_checkpoints ()
+  local correct_lap = 0
+  if data.P1Lap != 127 then
+    correct_lap = data.P1Lap + 1
   end
+  return data.P1LapCheckpoint + (correct_lap * 100)
 end
 
+function p2_lap_score_with_checkpoints ()
+  local correct_lap = 0
+  if data.P2Lap != 127 then
+    correct_lap = data.P2Lap + 1
+  end
+  return data.P2LapCheckpoint + (correct_lap * 100)
+end
