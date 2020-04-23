@@ -10,13 +10,19 @@
       "P1RaceStatus": {
         "op": "equal",
         "reference": 120
+      },
+      "P2RaceStatus": {
+        "op": "equal",
+        "reference": 120
       }
     }
   },
-  "reward": {
-    "script": "lua:p1_lap_score_with_checkpoints"
-  },
-  "scripts": [
-    "script.lua"
+  "rewards": [
+    {
+      "script": "lua:p1_lap_score_with_checkpoints"
+    },
+    {
+      "script": "lua:p2_lap_score_with_checkpoints"
+    }
   ]
 }
